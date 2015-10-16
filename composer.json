@@ -1,0 +1,15 @@
+{
+    "name": "freefly19/geek-hub-hm2",
+    "authors": [
+        {
+            "name": "Alexandr Melnik",
+            "email": "wmsystem2008@yandex.ru"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5",
+        "twig/twig": "~1.0",
+        "silex/silex": "~1.0",
+        "vladkens/VK": "dev-master"
+    }
+}
