@@ -1,0 +1,32 @@
+{% extends "layout.html.twig" %}
+
+{% block title "Hello world!" %}
+
+{% block content %}
+    <div ng-app="app" ng-controller="mainController">
+        <div style="position: fixed; top: 0; left: 0;width:100%; background-color: #eee;">
+            Ідентифікатор відкритої групи ВК: <input type="text" ng-model="groupId"/>
+            <button ng-click="show(groupId)">Показати записи</button><br>
+            <a href="#" ng-click="show(groupId=30111409)">Переглянути записи з групи GeekHub</a>
+
+            <hr>
+        </div>
+
+
+        <div style="margin-top: 70px;">
+            <div ng-repeat="post in posts">
+                <p>Автор: [[post.author.last_name]] [[post.author.first_name]]</p>
+                <p>Дата створення: [[post.date]]</p>
+                <p>[[post.message]]</p>
+                <hr>
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block IncludeJS %}
+    {{ parent() }}
+    <script src="/js/app.js"></script>
+{% endblock %}

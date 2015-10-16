@@ -16,6 +16,10 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../views',
 ));
 
+$app->get('/', function() use ($app,$vk){
+    return $app['twig']->render('index.html.twig');
+});
+
 $app->get('/group/{id}/posts', function ($id) use ($app,$vk) {
     return json_encode($vk->getGroupPosts($id));
 });
