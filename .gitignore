@@ -1,0 +1,10 @@
+#############
+# PhpStrorm #
+#############
+.idea/
+
+#############
+# Composer  #
+#############
+composer.lock
+/vendor
