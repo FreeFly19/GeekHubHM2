@@ -2,7 +2,8 @@
 
 namespace VKProvider;
 
-class User{
+class User
+{
     public $first_name;
 
     public $last_name;
