@@ -2,7 +2,8 @@
 
 namespace VKProvider;
 
-class Post{
+class Post
+{
     /**
      * @var string
      */
