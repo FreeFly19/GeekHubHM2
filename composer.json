@@ -11,5 +11,10 @@
         "twig/twig": "~1.0",
         "silex/silex": "~1.0",
         "vladkens/VK": "dev-master"
+    },
+    "autoload" : {
+        "psr-4": {
+            "VKProvider\\" : "Provider/VKProvider"
+        }
     }
 }

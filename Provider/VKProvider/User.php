@@ -1,6 +1,6 @@
 <?php
 
-namespace Provider\VK;
+namespace VKProvider;
 
 class User{
     public $first_name;

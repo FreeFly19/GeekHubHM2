@@ -1,5 +1,5 @@
 <?php
-namespace Provider\VK;
+namespace VKProvider;
 
 class VKService {
     /**
